@@ -1,5 +1,19 @@
-\documentclass[fontsize=12pt,BCOR=5mm,DIV=12,parskip=half,listof=totoc,
-               paper=a4,toc=bibliography,numbers=noenddot]{scrreprt}
+\documentclass[
+    fontsize=12pt,    % Schriftgröße 12pt
+    BCOR=5mm,         % Bindekorrektur (z. B. für links gebundene Arbeiten)
+    %DIV=12,           % Seitenaufteilung, steuert Satzspiegel (DIV=12 = relativ großzügig, ok bei 2.5cm-Rand)
+    parskip=half,     % Halber Absatzabstand
+    listof=totoc,     % Abbildungs-/Tabellenverzeichnisse im Inhaltsverzeichnis
+    paper=a4,         % Papierformat A4
+    toc=bibliography, % Literaturverzeichnis im Inhaltsverzeichnis aufführen
+    numbers=noenddot  % Kein Punkt am Ende von Kapitelnummern
+]{scrreprt}
+
+\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+
+% Zeilenabstand 1.5
+\usepackage{setspace}
+\onehalfspacing
 
 \input{settings/packages}
 \input{settings/newcommands}
